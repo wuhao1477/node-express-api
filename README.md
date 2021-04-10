@@ -9,7 +9,7 @@
 ## 安装
 
 ```shell
-npm install 
+    npm install 
 ```
 
 ## 运行
