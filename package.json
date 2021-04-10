@@ -1,0 +1,21 @@
+{
+  "name": "kuaidi_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bufferhelper": "^0.2.1",
+    "cheerio": "^1.0.0-rc.6",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "iconv-lite": "^0.6.2",
+    "querystring": "^0.2.1",
+    "request": "^2.88.2"
+  }
+}
