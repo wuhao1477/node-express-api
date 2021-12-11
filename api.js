@@ -1,11 +1,11 @@
-const request = require("request");
+import request from "request"
 var cookie
 
-module.exports={
-  main
-}
+// module.exports={
+//   main
+// }
 //
-async function main(kuaidi_number) {
+export async function main(kuaidi_number) {
   let token = await getToken(kuaidi_number); //token可以多次使用的，但这里就不写多次使用了避免特殊情况发生
   console.log("获取的token为："+token, "要查询的订单号为："+kuaidi_number);
   let data = await kuaidi(token, kuaidi_number);
@@ -13,7 +13,7 @@ async function main(kuaidi_number) {
   return data
 }
 //获取token和cookie的值
-function getToken(kuaidi_number) {
+export function getToken(kuaidi_number) {
   return new Promise((resolve) => {
     let opts = {
       url: "https://www.baidu.com/s?wd=" + kuaidi_number,
@@ -35,7 +35,7 @@ function getToken(kuaidi_number) {
 }
 
 //请求快递数据
-function kuaidi(token,kuaidi_number) {
+export function kuaidi(token,kuaidi_number) {
   return new Promise((resolve)=>{
     let opts = {
       url:"https://express.baidu.com/express/api/express?tokenV2="+token+"&nu="+kuaidi_number,
