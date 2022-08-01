@@ -35,7 +35,7 @@ export function kuaidi(token, kuaidi_number) {
   return new Promise((resolve) => {
     let opts = {
       url:
-        "https://express.baidu.com/express/api/express?tokenV2=" +
+        "https://express.baidu.com/express/api/express?cb=&tokenV2=" +
         token +
         "&nu=" +
         kuaidi_number,
